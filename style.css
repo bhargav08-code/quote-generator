@@ -1,0 +1,109 @@
+/* body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    rgb(139, 92, 246),
+    rgb(253, 186, 116)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu";
+}
+.card {
+  border-radius: 10px;
+  height: 15rem;
+} */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+  margin-top: 2rem;
+}
+ul li button {
+  background: #ffffff;
+  border-radius: 5px;
+}
+ul li:nth-child(1) {
+  cursor: pointer;
+  position: relative;
+  right: 30%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1b2029; /*Changable-background*/
+}
+.main {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: rgba(194, 193, 193, 0.073);
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  color: white;
+  text-align: center;
+  transition: ease-in 0.6s;
+}
+.text {
+  transition: ease-in 0.6s;
+}
+.qoute {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+.dq {
+  color: rgb(237, 220, 144);
+  font-size: 25px;
+}
+.author {
+  float: right;
+  margin-top: 15px;
+  margin-right: 8px;
+}
+.btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgb(107, 177, 246);
+  font-family: sans-serif;
+  font-size: 15px;
+  height: 30px;
+  width: auto;
+  left: 48%;
+  top: 89%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: ease-in 0.6s;
+}
+/*-----responsive------*/
+@media screen and (max-width: 980px) {
+  .main {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 93%;
+  }
+  .qoute {
+    font-size: 25px;
+  }
+  .btn {
+    width: auto;
+  }
+}
